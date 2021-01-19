@@ -1,0 +1,69 @@
+<div class="users-component">
+  <h1 mat-dialog-title>Cadastre um Novo Usuário</h1>
+  <form [formGroup]="contactForm" (ngSubmit)="onContactSubmit()">
+    <div class="row margin-input">
+      <div class="col-md-6 margin-input">
+        <label class="" [ngStyle]="{'background-image': 'url(http://localhost:3000/attachments/' + imageView + ')'}">
+          <input class="image-input"
+              type="file"
+              accept="image/*"
+              (change)="uploadPicture($event)"
+              />
+        </label>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100 color="white">
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="name">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 margin-input">
+          <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100>
+          <mat-label>email</mat-label>
+          <input matInput formControlName="email">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100>
+          <mat-label>Sobrenome</mat-label>
+          <input matInput formControlName="surname">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100>
+          <mat-label>Idade</mat-label>
+          <input matInput type="number" formControlName="age">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100>
+          <mat-label>País</mat-label>
+          <input matInput formControlName="country">
+        </mat-form-field>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+      </div>
+      <div class="col-md-6 margin-input">
+        <br/>
+        <mat-form-field appearance="fill" [style.width.%]=100>
+          <mat-label>Cpf</mat-label>
+          <input matInput formControlName="cpf">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 align-right">
+      </div>
+    </div>
+  </form>
+  <div mat-dialog-actions>
+    <button mat-button (click)="closeModal()">Close</button>
+    <button mat-button (click)="onContactSubmit()">Enviar</button>
+  </div>
+</div>

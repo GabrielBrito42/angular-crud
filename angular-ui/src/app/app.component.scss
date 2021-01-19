@@ -1,0 +1,31 @@
+.nav-bar {
+  a:hover {
+      color: white;
+  }
+
+  mat-sidenav {
+    a {
+      text-align: left;
+      width: 100%;
+      padding-top: 5px;
+    }
+
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+mat-sidenav-container{
+  height: 100%;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,58 @@
+.nav-bar {
+  a:hover {
+      color: white;
+  }
+
+  mat-sidenav {
+    a {
+      text-align: left;
+    }
+
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+.image-input{
+  display: none;
+}
+
+.container{
+  padding-top: 10px;
+}
+
+label{
+  width: 150px;
+  height: 200px;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url();
+}
+
+mat-sidenav-container{
+  height: 100%;
+}
+
+button{
+  background-color: #673ab7;
+  color: white;
+  width: 100pt;
+}
+
+.align-right{
+  text-align: right;
+}
+
+.panel-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

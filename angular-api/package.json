@@ -1,0 +1,21 @@
+{
+  "name": "angular-api",
+  "version": "1.0.0",
+  "description": "Simple angular study",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^1.0.3",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "jimp": "^0.16.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.11.8"
+  }
+}

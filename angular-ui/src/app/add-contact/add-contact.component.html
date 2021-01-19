@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <form [formGroup]="contactForm" (ngSubmit)="onContactSubmit()">
+        <div class="row margin-input">
+          <div class="col-md-6 margin-input">
+            <label class="" [ngStyle]="{'background-image': 'url(http://localhost:3000/attachments/' + imageView + ')'}">
+              <input class="image-input"
+                  type="file"
+                  accept="image/*"
+                  (change)="uploadPicture($event)"
+                  />
+            </label>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100 color="white">
+              <mat-label>Nome</mat-label>
+              <input matInput formControlName="name">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 margin-input">
+              <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100>
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100>
+              <mat-label>Sobrenome</mat-label>
+              <input matInput formControlName="surname">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100>
+              <mat-label>Idade</mat-label>
+              <input matInput type="number" formControlName="age">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100>
+              <mat-label>País</mat-label>
+              <input matInput formControlName="country">
+            </mat-form-field>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-radio-group aria-label="Genêro" formControlName="gender">
+              <mat-radio-button value="M">Masculino</mat-radio-button>
+              <br/>
+              <mat-radio-button value="F">Feminino</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <div class="col-md-6 margin-input">
+            <br/>
+            <mat-form-field appearance="fill" [style.width.%]=100>
+              <mat-label>Cpf</mat-label>
+              <input matInput formControlName="cpf">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 align-right">
+          </div>
+          <div class="col-md-6 align-right">
+            <br/>
+            <button mat-button color="raised" class="send-button">Enviar</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.example-header-image {
+  background-size: cover;
+}
+
+.container{
+  padding-top: 5px;
+}
+
+.mat-card-image{
+  max-height: 400px !important;
+}
+
+.col-4{
+  padding-top: 5px;
+}
+
+label{
+  width: 150px;
+  height: 200px;
+  position: relative;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-size: cover;
+  cursor: pointer;
+  background-image: url();
+}
+
+.image-input{
+  display: none;
+}

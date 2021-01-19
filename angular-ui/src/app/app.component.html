@@ -1,0 +1,20 @@
+<div class="nav-bar">
+  <div class="home-container">
+    <mat-toolbar color="primary" class="home-toolbar">
+      <button mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1>Agenda</h1>
+    </mat-toolbar>
+
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav mode="side">
+        <a routerLink="/add-contact" mat-button>Adicionar Contato</a>
+        <a routerLink="/" mat-button>Ver Contatos</a>
+      </mat-sidenav>
+    
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+        <div><footer-component></footer-component></div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>
